@@ -2,8 +2,14 @@ package com.publicept.a03_39_numbershapes;
 
 public class Number {
 
-    int number;
+    private int number;
 
+
+    // == public methods ==
+    /**
+     * Tests if the number is a square number
+     * @return  true/false
+     */
     public boolean isSquare() {
 
         double squareRoot = Math.sqrt(number);
@@ -19,6 +25,10 @@ public class Number {
 
     }
 
+    /**
+     * Tests if the number is a triangular number
+     * @return true/false
+     */
     public boolean isTriangular() {
 
         int x = 1;
@@ -37,5 +47,16 @@ public class Number {
             return false;
         }
 
+    }
+
+
+
+    // == getter & setter
+    /**
+     * Set the number field
+     * @param number the int to set the number
+     */
+    public void setNumber(int number) {
+        this.number = number;
     }
 }
